@@ -1,0 +1,87 @@
+.cart {
+  margin-top: 100px;
+}
+.cartitemstitle {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  color: grey;
+  font-size: max(1vw, 12px);
+}
+.cartitemsitem {
+  margin: 10px;
+  color: black;
+}
+.cartitemsitem img {
+  width: 50px;
+}
+
+.cartitemsitem .cross {
+  cursor: pointer;
+}
+.cartbottom {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  gap: max(12vw, 20px);
+}
+.carttotal {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.carttotaldetails {
+  display: flex;
+  justify-content: space-between;
+  color: #555555;
+}
+.carttotal hr {
+  margin: 10px 0px;
+}
+
+.carttotal button {
+  border: none;
+  color: white;
+  background-color: tomato;
+  width: max(15vw, 200px);
+  padding: 12px 0px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cartpromocode {
+  flex: 1;
+}
+.cartpromocode p {
+  color: #555555;
+}
+.cartpromoinput {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eaeaea;
+  border-radius: 5px;
+}
+.cartpromoinput input {
+  background: transparent;
+  outline: none;
+  border: none;
+  padding-left: 10px;
+}
+.cartpromoinput button {
+  width: max(10vw, 15px);
+  padding: 12px 5px;
+  background-color: black;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+@media (max-width: 750px) {
+  .cartbottom {
+    flex-direction: column-reverse;
+  }
+  .cartpromocode {
+    justify-content: start;
+  }
+}
